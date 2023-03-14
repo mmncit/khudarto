@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/khudarto/static/js/main.9a310e68.js",
-    "static/js/402.9387a3ff.js": "/khudarto/static/js/402.9387a3ff.js",
+    "main.js": "/khudarto/static/js/main.df4ed45f.js",
+    "static/js/402.5c5e744d.js": "/khudarto/static/js/402.5c5e744d.js",
     "static/media/logo.avif": "/khudarto/static/media/logo.6cd2087dc33e0a237c4a.avif",
     "favicon.ico": "/khudarto/favicon.ico",
     "index.html": "/khudarto/index.html",
@@ -9,11 +9,11 @@
     "favicon-16.png": "/khudarto/favicon-16.png",
     "serve.json": "/khudarto/serve.json",
     "manifest.json": "/khudarto/manifest.json",
-    "main.9a310e68.js.map": "/khudarto/static/js/main.9a310e68.js.map",
-    "402.9387a3ff.js.map": "/khudarto/static/js/402.9387a3ff.js.map"
+    "main.df4ed45f.js.map": "/khudarto/static/js/main.df4ed45f.js.map",
+    "402.5c5e744d.js.map": "/khudarto/static/js/402.5c5e744d.js.map"
   },
   "entrypoints": [
-    "static/js/402.9387a3ff.js",
-    "static/js/main.9a310e68.js"
+    "static/js/402.5c5e744d.js",
+    "static/js/main.df4ed45f.js"
   ]
 }
