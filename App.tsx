@@ -3,8 +3,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 
-// import { withExpoSnack } from 'nativewind';
-
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -18,4 +16,3 @@ function App() {
 }
 
 export default App;
-// export default withExpoSnack(App); // to test web, call App with withExpoSnack
