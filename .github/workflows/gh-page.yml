@@ -19,8 +19,8 @@ jobs:
           NODE_OPTIONS: '--openssl-legacy-provider'
       - name: Build web
         run: |
-          npx expo install
-          expo export:web
+          npm install --legacy-peer-deps
+          npm run predeploy
       - name: Build and deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
