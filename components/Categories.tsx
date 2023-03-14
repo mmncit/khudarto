@@ -1,8 +1,8 @@
 import { View, Text, ScrollView } from 'react-native';
 import React from 'react';
-import CategoryCard from './CategoryCard';
+import { CategoryCard } from './CategoryCard';
 
-const Categories = () => {
+export function Categories() {
   return (
     <ScrollView
       contentContainerStyle={{
@@ -17,6 +17,4 @@ const Categories = () => {
       <CategoryCard imageUrl="https://reactnative.dev/img/tiny_logo.png" title="Testing 3" />
     </ScrollView>
   );
-};
-
-export default Categories;
+}

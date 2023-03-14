@@ -3,7 +3,7 @@ import React from 'react';
 import { ArrowRightIcon } from 'react-native-heroicons/outline';
 import { RestaurantCard } from './RestaurantCard';
 
-const FeaturedRow = ({ id, title, description, featuredCategory }) => {
+export function FeaturedRow({ id, title, description, featuredCategory }) {
   return (
     <View>
       <View className="mt-4 flex-row items-center justify-between px-4">
@@ -46,9 +46,33 @@ const FeaturedRow = ({ id, title, description, featuredCategory }) => {
           long={20}
           lat={0}
         />
+
+        <RestaurantCard
+          id={4}
+          imageUrl="https://upload.wikimedia.org/wikipedia/commons/5/54/Vin_et_gastronomie_chypriotes.jpg"
+          title="Chypriotes"
+          rating={4.5}
+          genre="Chypriotes"
+          address="10 Dalton Drive NW"
+          shortDescription="This is a test description"
+          dishes={[]}
+          long={20}
+          lat={0}
+        />
+
+        <RestaurantCard
+          id={3}
+          imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Osechi_001.jpg/1920px-Osechi_001.jpg"
+          title="Fusion Sushi"
+          rating={4.5}
+          genre="Japanese"
+          address="202 Crowchild Trail NW"
+          shortDescription="This is a test description"
+          dishes={[]}
+          long={20}
+          lat={0}
+        />
       </ScrollView>
     </View>
   );
-};
-
-export default FeaturedRow;
+}

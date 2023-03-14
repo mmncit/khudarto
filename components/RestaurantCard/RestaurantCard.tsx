@@ -26,7 +26,7 @@ export function RestaurantCard({
         <View style={styles.infoContainer}>
           <StarIcon color="green" fill="green" opacity={0.5} size={22} />
           <Text style={styles.text}>
-            <Text style={styles.mapColor}>{rating}</Text> . {genre}
+            <Text style={styles.ratingColor}>{rating}</Text> . {genre}
           </Text>
         </View>
 
