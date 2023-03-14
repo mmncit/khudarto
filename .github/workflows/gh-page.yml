@@ -17,9 +17,8 @@ jobs:
       - run: node --version
         env:
           NODE_OPTIONS: '--openssl-legacy-provider'
-      - name: Build Storybook
+      - name: Build web
         run: |
-          mkdir dist
           npx expo install
           expo export:web
       - name: Build and deploy 🚀
