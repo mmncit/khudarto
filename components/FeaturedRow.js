@@ -1,7 +1,7 @@
 import { View, Text, ScrollView } from 'react-native';
 import React from 'react';
 import { ArrowRightIcon } from 'react-native-heroicons/outline';
-import RestaurantCard from './RestaurantCard';
+import { RestaurantCard } from './RestaurantCard';
 
 const FeaturedRow = ({ id, title, description, featuredCategory }) => {
   return (

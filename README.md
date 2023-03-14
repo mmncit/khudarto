@@ -1,6 +1,10 @@
 # ক্ষুধার্ত
 
-Online Delivery Front End using React Native, Tailwind, Sanity CMS
+Online Delivery Frontend using React Native, ~~Tailwind~~, TypeScript, Expo, Sanity CMS
+
+Dependency:
+
+- Expo
 
 Run locally:
 
