@@ -1,14 +1,13 @@
 # ক্ষুধার্ত
 
-Online Delivery Frontend using React Native, ~~Tailwind~~, TypeScript, Expo, Sanity CMS
+[![gh-pages](https://github.com/mmncit/khudarto/actions/workflows/gh-page.yml/badge.svg)](https://github.com/mmncit/khudarto/actions/workflows/gh-page.yml)
 
-Dependency:
+Online Delivery Frontend using **React-Native**, **Redux**, TypeScript, Expo
 
-- Expo
-
-Run locally:
+Local setup:
 
 ```
+npm install -g @expo/cli
 npx expo install
 expo start
 ```
