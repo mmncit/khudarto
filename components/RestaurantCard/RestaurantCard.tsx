@@ -16,7 +16,6 @@ export function RestaurantCard({
   long,
   lat,
 }: RestaurantCardProps) {
-  console.log({ imageUrl });
   return (
     <TouchableOpacity style={styles.container}>
       <Image source={{ uri: imageUrl }} style={styles.image} />
