@@ -8,6 +8,7 @@ import Constants from 'expo-constants';
 
 export function FeaturedRow({ id, title, description, featuredCategory }: FeaturedRowProps) {
   const burgerImageUrl = Constants.expoConfig.extra.burgerImageUrl;
+  console.log({ Constants, burgerImageUrl });
 
   return (
     <View>
