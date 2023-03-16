@@ -9,8 +9,15 @@ import {
 } from 'react-native-heroicons/outline';
 import { Categories, FeaturedRow } from '../../components';
 import { styles } from './HomeScreen.styles';
+import Constants from 'expo-constants';
 
 export function HomeScreen() {
+  const emailAddress: string = Constants.expoConfig.extra.contact;
+
+  console.log(
+    `This is just a fun personal project. Contact ${emailAddress} to collaborate. Any feedback is welcome.`
+  );
+
   const navigation = useNavigation();
 
   React.useEffect(() => {
