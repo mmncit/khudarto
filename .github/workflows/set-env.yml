@@ -1,0 +1,14 @@
+name: set-env
+on:
+  workflow_dispatch:
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps:
+      - name: 'Say Hello Mamun'
+        run: |
+          echo "Hello, ${{ vars.MY_NAME }}!"
+          echo "My burger's image URL: ${{ vars.IMAGE_URI_BURGER }}"

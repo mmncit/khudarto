@@ -55,19 +55,19 @@ export function HomeScreen() {
         <Categories />
         {/* Featured rows */}
         <FeaturedRow
-          id="1"
+          id={1}
           title="Featured"
           description="Paid placements from our partners"
           featuredCategory=""
         />
         <FeaturedRow
-          id="2"
+          id={2}
           title="Tasty Discounts"
           description="Everyone been enjoying these juicy discounts!"
           featuredCategory=""
         />
         <FeaturedRow
-          id="3"
+          id={3}
           title="Offers near me"
           description="Paid placements from our partners"
           featuredCategory=""

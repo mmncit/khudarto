@@ -4,8 +4,11 @@ import { ArrowRightIcon } from 'react-native-heroicons/outline';
 import { RestaurantCard } from '../RestaurantCard';
 import { FeaturedRowProps } from './FeaturedRow.types';
 import { styles } from './FeaturedRow.styles';
+import Constants from 'expo-constants';
 
 export function FeaturedRow({ id, title, description, featuredCategory }: FeaturedRowProps) {
+  const burgerImageUrl = Constants.expoConfig.extra.burgerImageUrl;
+
   return (
     <View>
       <View style={styles.container}>
@@ -25,7 +28,7 @@ export function FeaturedRow({ id, title, description, featuredCategory }: Featur
         {/* RestaurantCards  */}
         <RestaurantCard
           id={1}
-          imageUrl="https://cdn.stocksnap.io/img-thumbs/960w/food-burger_WYL5KWIPUD.jpg"
+          imageUrl={burgerImageUrl}
           title="Burger Mama"
           rating={4.5}
           genre="Fast Food"
