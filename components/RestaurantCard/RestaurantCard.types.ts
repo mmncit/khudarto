@@ -1,3 +1,5 @@
+import { RESTAURANT_PATH } from '../../constants';
+
 export interface RestaurantCardProps {
   id: number;
   imageUrl: string;
