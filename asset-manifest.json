@@ -1,19 +1,16 @@
 {
   "files": {
-    "main.js": "/khudarto/static/js/main.aa2d822a.js",
-    "static/js/402.2aed6851.js": "/khudarto/static/js/402.2aed6851.js",
+    "main.js": "/khudarto/static/js/main.a36de10b.js",
+    "static/js/171.6f4acf2b.js": "/khudarto/static/js/171.6f4acf2b.js",
     "static/media/logo.avif": "/khudarto/static/media/logo.6cd2087dc33e0a237c4a.avif",
-    "favicon.ico": "/khudarto/favicon.ico",
     "index.html": "/khudarto/index.html",
-    "favicon-32.png": "/khudarto/favicon-32.png",
-    "favicon-16.png": "/khudarto/favicon-16.png",
     "serve.json": "/khudarto/serve.json",
     "manifest.json": "/khudarto/manifest.json",
-    "main.aa2d822a.js.map": "/khudarto/static/js/main.aa2d822a.js.map",
-    "402.2aed6851.js.map": "/khudarto/static/js/402.2aed6851.js.map"
+    "main.a36de10b.js.map": "/khudarto/static/js/main.a36de10b.js.map",
+    "171.6f4acf2b.js.map": "/khudarto/static/js/171.6f4acf2b.js.map"
   },
   "entrypoints": [
-    "static/js/402.2aed6851.js",
-    "static/js/main.aa2d822a.js"
+    "static/js/171.6f4acf2b.js",
+    "static/js/main.a36de10b.js"
   ]
 }
