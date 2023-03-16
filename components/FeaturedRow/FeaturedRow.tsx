@@ -7,8 +7,8 @@ import { styles } from './FeaturedRow.styles';
 import Constants from 'expo-constants';
 
 export function FeaturedRow({ id, title, description, featuredCategory }: FeaturedRowProps) {
-  const burgerImageUrl: string = Constants.expoConfig.extra.burgerImageUrl;
-  console.log({ Constants, burgerImageUrl });
+  const { burgerImageUrl, indianFoodImageUrl, japaneseFoodImageUrl, chypriotesFoodUrl } =
+    Constants.expoConfig.extra;
 
   return (
     <View>
@@ -42,7 +42,7 @@ export function FeaturedRow({ id, title, description, featuredCategory }: Featur
 
         <RestaurantCard
           id={2}
-          imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Indian_-_Food.jpg/1599px-Indian_-_Food.jpg?20150605061809"
+          imageUrl={indianFoodImageUrl}
           title="Cinnamon"
           rating={4.5}
           genre="Indian"
@@ -55,7 +55,7 @@ export function FeaturedRow({ id, title, description, featuredCategory }: Featur
 
         <RestaurantCard
           id={4}
-          imageUrl="https://upload.wikimedia.org/wikipedia/commons/5/54/Vin_et_gastronomie_chypriotes.jpg"
+          imageUrl={chypriotesFoodUrl}
           title="Chypriotes"
           rating={4.5}
           genre="Chypriotes"
@@ -68,7 +68,7 @@ export function FeaturedRow({ id, title, description, featuredCategory }: Featur
 
         <RestaurantCard
           id={3}
-          imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Osechi_001.jpg/1920px-Osechi_001.jpg"
+          imageUrl={japaneseFoodImageUrl}
           title="Fusion Sushi"
           rating={4.5}
           genre="Japanese"

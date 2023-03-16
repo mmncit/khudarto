@@ -24,7 +24,7 @@ jobs:
           npm run predeploy
         env:
           IMAGE_URI_BURGER: ${{ vars.IMAGE_URI_BURGER }}
-          CONTACT: ${{ vars.CONTACT }}
+          CONTACT_MESSAGE: ${{ vars.CONTACT_MESSAGE }}
 
       - name: Build and deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
