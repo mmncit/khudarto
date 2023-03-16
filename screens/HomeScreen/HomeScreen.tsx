@@ -26,7 +26,7 @@ export function HomeScreen() {
     <SafeAreaView style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <Image source={require('../../assets/logo.avif')} style={styles.image} />
+        <Image source={require('../../assets/logo.png')} style={styles.image} />
         <View style={styles.headerContainer}>
           <Text style={styles.deliveryText}>Deliver now!</Text>
           <Text style={styles.currentLocation}>
