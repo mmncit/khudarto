@@ -47,7 +47,7 @@ export function FeaturedRow({ id, title, description, featuredCategory }: Featur
           rating={4.5}
           genre="Indian"
           address="102 Barlow Trail NE"
-          shortDescription="This is a test description"
+          shortDescription="Welcome to our Indian cuisine restaurant, where we invite you to indulge in the vibrant flavors and spices of India. Our menu offers a wide variety of authentic dishes, from classic curries to tandoori specialties and aromatic biryanis. With a focus on using only the freshest and finest ingredients, our skilled chefs take pride in creating delicious, flavorful meals that are sure to satisfy. Whether you're a fan of vegetarian cuisine or a meat lover, we have something for everyone. Come and experience the rich culture and taste of India at our restaurant today!"
           dishes={[]}
           long={20}
           lat={0}
