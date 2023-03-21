@@ -1,12 +1,28 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import { DishRowProps } from './DishRow.types';
 import { styles } from './DishRow.styles';
 import { currencyFormat } from './utils';
 import { MinusCircleIcon, PlusCircleIcon } from 'react-native-heroicons/outline';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToBasket, removeFromBasket, selectBasketItemsWithId } from '../../features/basketSlice';
 
 export function DishRow({ id, name, description, price, imageUrl }: DishRowProps) {
-  const [isPressed, setIsPressed] = React.useState(false);
+  const [isPressed, setIsPressed] = useState(false);
+  const items = useSelector((state) => selectBasketItemsWithId(state, id));
+  const dispatch = useDispatch();
+
+  const addItemIntoBasket = () => {
+    dispatch(addToBasket({ id, name, description, price, imageUrl }));
+  };
+
+  const removeItemFromBasket = () => {
+    if (items.length <= 0) {
+      return;
+    }
+    dispatch(removeFromBasket({ id }));
+  };
+
   return (
     <>
       <TouchableOpacity style={styles.root} onPress={() => setIsPressed(!isPressed)}>
@@ -25,12 +41,12 @@ export function DishRow({ id, name, description, price, imageUrl }: DishRowProps
       {isPressed && (
         <View style={styles.orderCountContainer}>
           <View style={styles.orderCount}>
-            <TouchableOpacity>
-              <MinusCircleIcon color="#00CCBB" size={30} />
+            <TouchableOpacity disabled={!items.length} onPress={removeItemFromBasket}>
+              <MinusCircleIcon fill="#00CCBB" color="white" size={30} />
             </TouchableOpacity>
-            <Text style={styles.textColor}>0</Text>
-            <TouchableOpacity>
-              <PlusCircleIcon color="#00CCBB" size={30} />
+            <Text style={styles.textColor}>{items.length}</Text>
+            <TouchableOpacity onPress={addItemIntoBasket}>
+              <PlusCircleIcon fill="#00CCBB" color="white" size={30} />
             </TouchableOpacity>
           </View>
         </View>
