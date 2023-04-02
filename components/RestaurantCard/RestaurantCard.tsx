@@ -3,6 +3,10 @@ import React from 'react';
 import { MapPinIcon, StarIcon } from 'react-native-heroicons/outline';
 import { styles } from './RestaurantCard.styles';
 import { RestaurantCardProps } from './RestaurantCard.types';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RESTAURANT_PATH } from '../../constants';
+import { RootStackParamList } from '../../App.types';
 
 export function RestaurantCard({
   id,
@@ -16,8 +20,25 @@ export function RestaurantCard({
   long,
   lat,
 }: RestaurantCardProps) {
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={() => {
+        navigation.navigate(RESTAURANT_PATH, {
+          id,
+          imageUrl,
+          title,
+          rating,
+          genre,
+          address,
+          shortDescription,
+          dishes,
+          long,
+          lat,
+        });
+      }}
+    >
       <Image source={{ uri: imageUrl }} style={styles.image} />
 
       <View style={styles.info}>
