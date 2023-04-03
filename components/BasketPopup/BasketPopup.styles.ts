@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-
+import { commonStyles } from '../../common';
 export const styles = StyleSheet.create({
   root: {
     position: 'absolute',
@@ -15,5 +15,21 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  itemCountText: {
+    ...commonStyles.basketFontStyle,
+    backgroundColor: '#01A296',
+    paddingLeft: 4,
+    paddingRight: 4,
+    paddingTop: 8,
+    paddingBottom: 8,
+  },
+  viewBasketText: {
+    ...commonStyles.basketFontStyle,
+    textAlign: 'center',
+  },
+  currencyText: {
+    ...commonStyles.basketFontStyle,
   },
 });
