@@ -1,20 +1,21 @@
 import { StyleSheet } from 'react-native';
+import { FONT_WEIGHT_BOLD, SPACING } from '../../theme';
 
 export const styles = StyleSheet.create({
   container: {
     position: 'relative',
-    marginRight: 8,
+    marginRight: 2 * SPACING,
   },
   image: {
-    height: 20 * 4,
-    width: 20 * 4,
-    borderRadius: 4,
+    height: 20 * SPACING,
+    width: 20 * SPACING,
+    borderRadius: SPACING,
   },
   title: {
     position: 'absolute',
-    bottom: 4,
-    left: 4,
+    bottom: SPACING,
+    left: SPACING,
     color: 'white',
-    fontWeight: '700',
+    fontWeight: FONT_WEIGHT_BOLD,
   },
 });
