@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { commonStyles, FONT_WEIGHT_BOLD } from '../../theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -10,13 +11,12 @@ export const styles = StyleSheet.create({
     paddingRight: 16,
   },
   title: {
-    fontWeight: '700',
+    fontWeight: FONT_WEIGHT_BOLD,
     fontSize: 18,
     lineHeight: 28,
   },
   descriptionText: {
-    fontSize: 12,
-    lineHeight: 16,
+    ...commonStyles.textSm,
     color: 'rgb(107, 114, 128)',
     paddingLeft: 16,
     paddingRight: 16,

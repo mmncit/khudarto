@@ -11,7 +11,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "prettier": "prettier --check .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@expo/webpack-config": "^18.0.1",
@@ -30,7 +32,8 @@
     "react-native-screens": "~3.20.0",
     "react-native-svg": "^13.8.0",
     "react-native-web": "~0.18.11",
-    "react-redux": "^8.0.5"
+    "react-redux": "^8.0.5",
+    "reselect": "^4.1.7"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -42,9 +45,15 @@
     "eslint": "^8.35.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-native": "^4.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7",
     "tailwindcss": "^3.2.7",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "private": true
 }
