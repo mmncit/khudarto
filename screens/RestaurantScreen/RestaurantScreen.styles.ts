@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { commonStyles, FONT_WEIGHT_BOLD } from '../../theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -32,7 +33,7 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 30,
     lineHeight: 36,
-    fontWeight: '700',
+    fontWeight: FONT_WEIGHT_BOLD,
   },
   restaurantDescriptionContainer: {
     flexDirection: 'row',
@@ -48,8 +49,7 @@ export const styles = StyleSheet.create({
     marginRight: 4,
   },
   textStyle: {
-    fontSize: 12,
-    lineHeight: 16,
+    ...commonStyles.textSm,
     color: 'rgb(107, 114, 128)',
   },
   ratingFontColor: {
@@ -74,14 +74,14 @@ export const styles = StyleSheet.create({
     flex: 1,
     fontSize: 16,
     lineHeight: 24,
-    fontWeight: '700',
+    fontWeight: FONT_WEIGHT_BOLD,
   },
   menuTitle: {
     paddingLeft: 16,
     paddingRight: 16,
     paddingTop: 24,
     marginBottom: 12,
-    fontWeight: '700',
+    fontWeight: FONT_WEIGHT_BOLD,
     fontSize: 20,
     lineHeight: 28,
   },

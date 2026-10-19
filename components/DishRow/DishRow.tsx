@@ -9,7 +9,7 @@ import { addToBasket, removeFromBasket, selectBasketItemsWithId } from '../../fe
 
 export function DishRow({ id, name, description, price, imageUrl }: DishRowProps) {
   const [isPressed, setIsPressed] = useState(false);
-  const items = useSelector((state) => selectBasketItemsWithId(state, id));
+  const items = useSelector(selectBasketItemsWithId(id));
   const dispatch = useDispatch();
 
   const addItemIntoBasket = () => {

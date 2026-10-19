@@ -9,6 +9,6 @@ export interface RestaurantCardProps {
   address: string;
   shortDescription: string;
   dishes: Array<string>;
-  long: number;
-  lat: number;
+  long?: number;
+  lat?: number;
 }

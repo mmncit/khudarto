@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { commonStyles, FONT_WEIGHT_BOLD } from '../../theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -23,13 +24,12 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   deliveryText: {
+    ...commonStyles.textSm,
     color: '#9CA38F',
-    fontWeight: '700',
-    fontSize: 12,
-    lineHeight: 16,
+    fontWeight: FONT_WEIGHT_BOLD,
   },
   currentLocation: {
-    fontWeight: '700',
+    fontWeight: FONT_WEIGHT_BOLD,
     fontSize: 20,
     lineHeight: 28,
   },
